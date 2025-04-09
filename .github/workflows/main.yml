@@ -16,19 +16,19 @@ jobs:
 
         # Steps in job
         steps:
-        # Get code from repo
-        - name: Checkout code
-            uses: actions/checkout@v1
+            # Get code from repo
+            - name: Checkout code
+              uses: actions/checkout@v1
 
-        - name: Use Node.js 21.x
-            uses: actions/setup-node@v1
-            with:
-            node-version: 21.x
+            - name: Use Node.js 21.x
+              uses: actions/setup-node@v1
+              with:
+                node-version: 21.x
 
-        # Install dependencies
-        - name: 🧰 install deps
-            run: npm install
-            
-        # Run lint
-        - name: Run lint
-            run: npm run lint
+            # Install dependencies
+            - name: 🧰 install deps
+              run: npm install
+                
+            # Run lint
+            - name: Run lint
+              run: npm run lint
